@@ -429,30 +429,43 @@
         <button type="button" class="btn btn-close" data-modal-close>
           <img src="./image/svg/closed.svg" alt="X" width="11" height="11" />
         </button>
-        <form action="">
-            <label for="">
-              <input type="text">
-                <svg>
-                  <use></use>
-                </svg>
-              </input>
-            </label>
-            <label for="">
-              <input type="text">
-                <svg>
-                  <use></use>
-                </svg>
-              </input>
-            </label>
-            <label for="">
-              <input type="text">
-                <svg>
-                  <use></use>
-                </svg>
-              </input>
-            </label>
-            <label for=""><textarea name="" id="" cols="30" rows="10"></textarea>
+        <form class="client-form js-speaker-form" name="Client-form">
+          <p class="sub-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label>
+            <span class="label-title">Имя</span>
+            <input type="text" name="client-name" autofocus />
+            <svg  class="icon-form" width="18" height="18">
+              <use href="./image/svg/sprite.svg#icon-name"></use>
+            </svg>
           </label>
+          <label>
+            <span class="label-title">Телефон</span>
+            <input type="tel" name="client-telephone" />
+            <svg  class="icon-form" width="18" height="18">
+              <use href="./image/svg/sprite.svg#icon-tel"></use>
+            </svg>
+          </label>
+          <label>
+            <span class="label-title">Почта</span>
+            <input type="email" name="client-email" />
+            <svg  class="icon-form" width="18" height="18">
+              <use href="./image/svg/sprite.svg#icon-mail-form"></use>
+            </svg>
+          </label>
+          <label>
+            <span class="label-title">Комментарий</span>
+            <textarea
+              name="client-comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label >
+            <input type="checkbox" />
+            Соглашаюсь с рассылкой и принимаю <a href="" class="link">Условия договора</a>
+          </label>
+          <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
