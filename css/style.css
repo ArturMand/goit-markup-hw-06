@@ -679,11 +679,12 @@ padding: 40px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-form > label:hover,
+.client-form > label:hover > .input-form
 {
 color: var(--accent-color);
-
+border-color: var(--accent-color);
 }
-.client-form > label> input{
+.input-form{
   padding: 12px 42px;
   width: 448px;
   height: 40px;
@@ -691,7 +692,10 @@ color: var(--accent-color);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-form > label:hover > input{
+.container-input{
+  position: relative;
+}
+.client-form > label:hover > .container-input > .input-form{
   border-color: var(--accent-color);
 }
 .client-form > label > .label-title{
@@ -705,6 +709,7 @@ color: var(--accent-color);
 .icon-form{
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 15px;
   fill: currentColor;
 }

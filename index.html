@@ -433,24 +433,30 @@
           <p class="sub-title">Оставьте свои данные, мы вам перезвоним</p>
           <label>
             <span class="label-title">Имя</span>
-            <input type="text" name="client-name" autofocus />
-            <svg  class="icon-form" width="18" height="18">
-              <use href="./image/svg/sprite.svg#icon-name"></use>
-            </svg>
+            <div class="container-input">
+              <input class="input-form" type="text" name="client-name" autofocus />
+              <svg class="icon-form" width="18" height="18">
+                <use href="./image/svg/sprite.svg#icon-name"></use>
+              </svg>
+            </div>
           </label>
           <label>
             <span class="label-title">Телефон</span>
-            <input type="tel" name="client-telephone" />
-            <svg  class="icon-form" width="18" height="18">
-              <use href="./image/svg/sprite.svg#icon-tel"></use>
-            </svg>
+            <div class="container-input">
+              <input class="input-form" type="tel" name="client-telephone" />
+              <svg class="icon-form" width="18" height="18">
+                <use href="./image/svg/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
           </label>
           <label>
             <span class="label-title">Почта</span>
-            <input type="email" name="client-email" />
-            <svg  class="icon-form" width="18" height="18">
-              <use href="./image/svg/sprite.svg#icon-mail-form"></use>
-            </svg>
+            <div class="container-input">
+              <input class="input-form" type="email" name="client-email" />
+              <svg class="icon-form" width="18" height="18">
+                <use href="./image/svg/sprite.svg#icon-mail-form"></use>
+              </svg>
+            </div>
           </label>
           <label>
             <span class="label-title">Комментарий</span>
@@ -461,9 +467,11 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label >
-            <input type="checkbox" />
-            Соглашаюсь с рассылкой и принимаю <a href="" class="link">Условия договора</a>
+          <label>
+            <input type="checkbox" class="check-box" />
+            <span class="icon-checkbox"></span>
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a href="" class="link">Условия договора</a>
           </label>
           <button class="btn" type="submit">Отправить</button>
         </form>
